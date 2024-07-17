@@ -3,6 +3,7 @@
   --title:black;
   --primart:blue;
 }
+ 
 
 [data-theme='light']{
     --body-background: white;
