@@ -1,3 +1,22 @@
+:root{
+  --body-background:white;
+  --title:black;
+  --primart:blue;
+}
+
+[data-theme='light']{
+    --body-background: white;
+    --title: black;
+    --primart: blue;
+}
+[data-theme='dark'] {
+  --body-background:black;
+  --title: white;
+  --primart: rgb(97,97,255);
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

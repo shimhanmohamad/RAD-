@@ -87,3 +87,10 @@ footer .social-media-icons svg {
     margin: 0 5px;
   }
 }
+
+.box{
+  border: 3px solid darkblue;
+  width: 400px;
+  height: 800px;
+  margin-left: 600px;
+}

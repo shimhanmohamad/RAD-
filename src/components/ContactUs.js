@@ -6,8 +6,7 @@ const ContactContainer = styled.div`
   text-align: center;
   background: url('https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg') no-repeat center center/cover;
   min-height: 100vh;
-  color:blue
-
+  color: blue;
 `;
 
 const ContactForm = styled.form`
@@ -19,7 +18,6 @@ const ContactForm = styled.form`
     margin: 10px 0;
     padding: 10px;
     width: 300px;
-    
   }
 
   button {
@@ -63,7 +61,6 @@ const ContactUs = () => {
     };
 
     return (
-        
         <ContactContainer>
             <h1>Contact Us</h1>
             <ContactForm onSubmit={handleSubmit}>
@@ -95,7 +92,7 @@ const ContactUs = () => {
             {successMessage && <p>{successMessage}</p>}
             <div>
                 <h2>Contact Information</h2>
-                <p>Address: 123 /A ,Bambalapity,Colombo 7</p>
+                <p>Address: 123 /A, Bambalapity, Colombo 7</p>
                 <p>Phone: 0112346543</p>
                 <p>Email: Designcode@gmail.com</p>
             </div>

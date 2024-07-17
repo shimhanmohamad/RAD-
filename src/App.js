@@ -9,6 +9,7 @@ import { createGlobalStyle } from 'styled-components';
 
 
 
+
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: #f0f0f0; /* Light background color */

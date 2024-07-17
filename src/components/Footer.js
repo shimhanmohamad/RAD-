@@ -7,7 +7,7 @@ const FooterContainer = styled.footer`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: lightblue;
+  background-color: #87CEFA;
   color: blue;
   position: fixed;
   width: 100%;
@@ -37,7 +37,7 @@ const SocialMediaIcons = styled.div`
     }
 
     svg {
-      font-size: 24px; /* Adjust icon size */
+      font-size: 24px; 
     }
   }
   color:
@@ -48,20 +48,47 @@ const Footer = () => {
         <FooterContainer>
             <p>&copy; 2024 CodeCore. All rights reserved.</p>
             <div>
-                <a href="/privacy-policy">Privacy Policy</a>
-                <a href="/terms-of-service">Terms of Service</a>
+            <a href="/privacy-policy" style={{
+            color: 'darkblue',
+            textDecoration: 'none',
+            fontSize: '16px'
+           }}
+             >Privacy Policy</a>
+          <a href="/terms-of-service" style={{
+            color: 'darkblue', 
+            textDecoration: 'none',
+            fontSize: '16px'
+          }}
+>Terms of Service</a>
             </div>
             <SocialMediaIcons>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com" target="_blank" style={{
+            color: 'darkblue', 
+            textDecoration: 'none',
+            fontSize: '16px'
+          }}
+          rel="noopener noreferrer">
                     <Facebook />
                 </a>
-                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.twitter.com" target="_blank" style={{
+            color: 'darkblue',
+            textDecoration: 'none',
+            fontSize: '16px'
+          }} rel="noopener noreferrer">
                     <Twitter />
                 </a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com" target="_blank" style={{
+            color: 'darkblue',
+            textDecoration: 'none',
+            fontSize: '16px'
+          }}  rel="noopener noreferrer">
                     <Instagram />
                 </a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com" target="_blank" style={{
+            color: 'darkblue',
+            textDecoration: 'none',
+            fontSize: '16px'
+          }}  rel="noopener noreferrer">
                     <LinkedIn />
                 </a>
             </SocialMediaIcons>

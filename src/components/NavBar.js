@@ -5,7 +5,7 @@ const NavBarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightblue; /* Static background color */
+  background-color: #87CEFA; 
   color: blue; /* Static text color */
   padding: 10px 20px;
 
