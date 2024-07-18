@@ -1,21 +1,19 @@
-:root{
-  --body-background:white;
-  --title:black;
-  --primart:blue;
-}
- 
-
-[data-theme='light']{
-    --body-background: white;
-    --title: black;
-    --primart: blue;
-}
-[data-theme='dark'] {
-  --body-background:black;
-  --title: white;
-  --primart: rgb(97,97,255);
+:root {
+  --background-color-light: white;
+  --text-color-light: blue;
+  --background-color-dark: darkblue;
+  --text-color-dark: black;
 }
 
+body.light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+body.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
 
 
 body {

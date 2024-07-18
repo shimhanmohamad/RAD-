@@ -32,6 +32,9 @@ const NavLinks = styled.div`
   }
 `;
 
+
+
+
 const NavLinkItem = styled.a`
   color: inherit;
   text-decoration: none;
@@ -39,7 +42,8 @@ const NavLinkItem = styled.a`
   font-size: 1rem;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color:white;
   }
 
   @media (max-width: 600px) {
@@ -49,15 +53,24 @@ const NavLinkItem = styled.a`
 
 const ToggleButton = styled.button`
   display: none;
-  background: none;
+  background: blue;
   border: none;
-  color: blue;
+  border-radius:20px;
+  height:30px;
+  color: white;
   font-size: 1rem;
   cursor: pointer;
 
   @media (max-width: 600px) {
     display: block;
   }
+
+  &:hover {
+    text-decoration: none;
+    color:blue;
+    background: none;
+  }
+
 `;
 
 const NavBar = () => {

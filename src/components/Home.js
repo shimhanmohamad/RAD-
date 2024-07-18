@@ -15,6 +15,7 @@ const HomeContainer = styled.div`
 const Home = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
     const [welcomeMessage, setWelcomeMessage] = useState('');
+    const [autoMessage, setAutoMessage] = useState('');
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -29,11 +30,11 @@ const Home = () => {
     useEffect(() => {
         const hour = currentTime.getHours();
         if (hour < 12) {
-            setWelcomeMessage('Good Morning! Welcome to CODECORE!');
+            setAutoMessage('Good Morning! Welcome to CODECORE!');
         } else if (hour < 18) {
-            setWelcomeMessage('Good Afternoon! Welcome to CODECORE!');
+            setAutoMessage('Good Afternoon! Welcome to CODECORE!');
         } else {
-            setWelcomeMessage('Good Evening! Welcome to CODECORE!');
+            setAutoMessage('Good Evening! Welcome to CODECORE!');
         }
     }, [currentTime]);
 
@@ -44,12 +45,12 @@ const Home = () => {
 
     return (
         <HomeContainer>
-            <h1>{welcomeMessage}</h1>
-            <p>Current Time: {currentTime.toLocaleTimeString()}</p>
+            <h1>{welcomeMessage || autoMessage}</h1>
+            <h1>Current Time: {currentTime.toLocaleTimeString()}</h1>
             <input
                 type="text"
                 placeholder="Update welcome message"
-                value={welcomeMessage} // Ensure input value reflects welcomeMessage
+                value={welcomeMessage}
                 onChange={handleInputChange}
                 style={{ marginTop: '20px', padding: '10px', width: '300px', fontSize: '1rem' }}
             />
